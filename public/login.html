@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Afghan Link</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <h1 class="site-name">Afghan Link</h1>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="login-section">
+      <h2>Login</h2>
+      <form id="login-form" onsubmit="return handleLogin(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label>
+          <input type="checkbox" id="remember-me" name="remember-me"> Remember me
+        </label>
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="static/js/script.js"></script>
+</body>
+</html>
